@@ -5,9 +5,5 @@ document.addEventListener("DOMContentLoaded", function () {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    autoplay: {
-      delay: 3000,  // Автоперемикання кожні 3 секунди
-      disableOnInteraction: false,
-    },
   });
 });
