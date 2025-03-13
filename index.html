@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hata-bagata</title>
     <link rel="styiesheet" href="/css/styles.css" />
+    <head>
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      />
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    </head>
   </head>
   <body>
     <header class="header">
@@ -193,6 +200,19 @@
         <button id="prev">-</button>
         <button id="next">-</button>
       </section>
+
+      <header>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="image1.jpg" alt="1" /></div>
+            <div class="swiper-slide"><img src="image2.jpg" alt="2" /></div>
+            <div class="swiper-slide"><img src="image3.jpg" alt="3" /></div>
+          </div>
+          <!-- Навігація -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </header>
     </main>
     <footer class="footer">
       <p class="copyright">&#169; copyright 2025</p>
