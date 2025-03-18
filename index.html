@@ -5,16 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hata-bagata</title>
-    <link rel="styiesheet" href="/css/styles.css" />
-    <head>
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-      />
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    </head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!--<link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />-->
+
+    <!--<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>-->
   </head>
   <body>
+    <!--Шапка сайту-->
     <header class="header">
       <a href="./index.html" aria-label="Логотип сайта Hata-bagata">
         <img
@@ -28,27 +39,31 @@
       <nav class="navigation">
         <ul class="list">
           <li class="item">
-            <a class="link" href="">Основне меню</a>
+            <a class="link navigation-link" href="#">Основне меню</a>
           </li>
           <li class="item">
-            <a class="link" href="">Банкет</a>
+            <a class="link navigation-link" href="#">Банкет</a>
           </li>
           <li class="item">
-            <a class="link" href="">Реберня</a>
+            <a class="link navigation-link" href="#">Реберня</a>
           </li>
           <li class="item">
-            <a class="link" href="">Меню від ведмедика</a>
+            <a class="link navigation-link" href="#">Меню від ведмедика</a>
           </li>
         </ul>
       </nav>
       <div class="header-gruop">
-        <a href="tel:380970191918">+38 097 019 19 18</a>
-        <a href="tel:380660191918">+38 066 019 19 18</a>
-        <button type="button">Онлайн запис</button>
+        <a class="link header-phone" href="tel:380970191918"
+          >+38 097 019 19 18</a
+        >
+        <a class="link header-phone" href="tel:380660191918"
+          >+38 066 019 19 18</a
+        >
+        <button class="btn" type="button">Онлайн запис</button>
       </div>
     </header>
-
     <main>
+      <!--Секція герой-->
       <section>
         <div class="swiper">
           <div class="swiper-wrapper">
@@ -120,28 +135,20 @@
         </ul>
 
         <!--Кнопка відкриття модального вікна-->
-        <button id="openModal">Відкрити меню</button>
-        <!--Модальне вікно-->
-        <div id="modal" class="modal">
-          <div class="modal-content">
-            <span class="close">&times</span>
-            <h2>Меню ресторану</h2>
-            <p>Тут список страв</p>
+
+        <button class="hero-button" type="button" data-modal-open>
+          Замовити послугу
+        </button>
+        <div class="backgrop is-hidden" data-modal>
+          <div class="modal-wrapper">
+            <button class="modal-btn" data-modal-close>x</button>
+            <form class="modal-form"></form>
           </div>
         </div>
+
+        <!--Модальне вікно-->
 
         <!--ВАРІАНТ ДРУГИЙ-->
-
-        <button id="openModal">Відкрити меню</button>
-        <div id="menuModal" class="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Меню ресторану</h2>
-            <p>🍕 Піца Маргарита - 200 грн</p>
-            <p>🍔 Бургер Класичний - 180 грн</p>
-            <p>🥗 Салат Цезар - 150 грн</p>
-          </div>
-        </div>
 
         <div class="hero-group">
           <p class="uppertitle">Традиції та сучасність поруч</p>
@@ -157,6 +164,7 @@
           </li>
         </ul>
       </section>
+      <!--Секція про мене-->
       <section class="about">
         <ul class="list">
           <li class="item">
@@ -211,6 +219,7 @@
           <button class="btn" type="button"></button>
         </div>
       </section>
+      <!--Секція головний зал-->
       <section class="main-hall">
         <p class="uppertitl">
           Наш головний зал - це просторе, затишне місце, оформлене в
@@ -250,6 +259,7 @@
         </p>
         <button class="btn" type="button">Клікни мене !</button>
       </section>
+      <!--Тренувальна секція-->
       <section class="hero">
         <div class="slider">
           <ul class="hero">
@@ -263,6 +273,7 @@
         <button id="next">-</button>
       </section>
     </main>
+    <!--Футер-->
     <footer class="footer">
       <p class="copyright">&#169; copyright 2025</p>
       <ul class="list">
