@@ -6,13 +6,13 @@
     --secondary-font: Raleway, sans-serif;
 
     /*text color*/
-     --accent-cl: #121212; 
+     --accent-cl: ; 
     --main-txt-cl: #1E1E1E;
     --secondary-txt-cl: ;
 
     /*bacground colors*/
-    --accent-cl: #F5F4FA;;
-    --main-bg-cl: #E0E0E0;
+    --accent-cl: #FF6C00;
+    --main-bg-cl: #F5F4FA;
     --secondary-bg-cl: ;
 
 }
@@ -29,7 +29,7 @@ text-decoration: none;
 
 }
 .link {
-    font-family: Roboto;
+    font-family: var(--main-font);
     font-weight: 300;
     font-size: 12px;
     line-height: 1.33;
@@ -56,13 +56,26 @@ text-decoration: none;
 .btn-mode-dark {
     color: #E0E0E0;
 }
+.slider-btn {
+    font-weight: 600;
+        font-size: 11px;
+        line-height: 1.36;
+        text-align: right;
+        letter-spacing: 0.1em;
+        color: #fff;
+        background-color: transparent;
+}
+.slider-btn-disable {
+    text-align: left;
+    color: rgba(157, 164, 189, 0.6);
+}
 
 
 /* /*Шапка профілю */
 
 
 .header {
-    background-color: var(--accent-cl);
+    background-color: var(--main-bg-cl);
 }
 .navigation-link,
 .header-phone {
@@ -76,10 +89,46 @@ text-decoration: none;
 
 /* Секція герой */
 
-
-
-
-
+.hero {
+    background-color: #191c26;
+}
+.hero .link {
+font-weight: 600;
+font-size: 11px;
+line-height: 1.36;
+letter-spacing: 0.2em;
+color: #303030;
+}
+.hero .link:hover,
+.hero .link:focus {
+    color: var(--accent-cl);
+}
+.hero .uppertitle {
+    font-family: Open Sans;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 1.36;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color:rgba(157, 164, 189, 0.6);
+}
+.hero .title {
+    font-family: var(--secondary-font);
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 1.18;
+        letter-spacing: 0.5;
+        color: #fff;
+}
+.hero .subtitle {
+    
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.67;
+        letter-spacing: 0.02em;
+        color: #9da4bd;
+        
+}
 
 
 
