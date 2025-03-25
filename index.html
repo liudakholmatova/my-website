@@ -65,7 +65,8 @@
     <main>
       <!--Секція герой-->
       <section class="hero">
-        <ul class="list">
+        <div class="container">
+           <ul class="list">
           <li class="item">
             <a
               class="link"
@@ -112,14 +113,18 @@
             </button>
           </li>
         </ul>
+      </div>
+       
       </section>
 
-      <!--Секція про мене-->
-      <section class="about">
+      <!--Секція галерея-->
+      <section class="gallery">
+        <div class="container">
+           <h2 class="section-title">Ми рекомендуємо</h2>
         <ul class="list">
           <li class="item">
             <img
-              class="about-img"
+              class="gallery-img"
               src="./images/про нас/гриль.jpg"
               alt="овочі гриль"
               width="200"
@@ -128,7 +133,7 @@
           </li>
           <li class="item">
             <img
-              class="about-img"
+              class="gallery-img"
               src="./images/про нас/салати.jpg"
               alt="салат"
               width="200"
@@ -137,7 +142,7 @@
           </li>
           <li class="item">
             <img
-              class="about-img"
+              class="gallery-img"
               src="./images/про нас/борщ.jpg"
               alt="борщ"
               width="200"
@@ -146,7 +151,7 @@
           </li>
           <li class="item">
             <img
-              class="about-img"
+              class="gallery-img"
               src="./images/про нас/курятина.jpg"
               alt="курятина"
               width="200"
@@ -154,8 +159,14 @@
             />
           </li>
         </ul>
-        <div class="about-group">
-          <p class="uppertitle">Про нас</p>
+        </div>
+       
+      </section>
+
+      <!--Секція про мене-->
+      <section class="about">
+        <div class="container">
+ <div class="about-group">
           <h2 class="section-title">Ми готуємо, як для своїх</h2>
           <p class="subtitle">
             Страви приготовлені з екологічних продуктів, спокійна атмосфера,
@@ -166,39 +177,42 @@
             приправлена любов"ю. Приходьте на обід чи вечерю - бронюйте столик
             просто зараз!
           </p>
-          <button class="btn btn-mode-light" type="button"></button>
         </div>
+        </div>
+       
       </section>
+
       <!--Секція головний зал-->
       <section class="main-hall">
-        <p class="uppertitl">
+        <div class="container">
+             <p class="main-hall-uppertitl">
           Наш головний зал - це просторе, затишне місце, оформлене в
           автентичному українському стилі.
         </p>
-        <h2 class="section-title">Банкетний зал</h2>
+        <h2 class="main-hall-title">Банкетний зал</h2>
         <ul class="list">
-          <li class="item">
+          <li class="main-hall-item">
             Деревяні меблі, вишуканий декор із народними мотивами та тепла
             атмосфера створюють ідеальні умови для відпочинку та святкування.
           </li>
-          <li class="item">
+          <li class="main-hall-item">
             .Великий простір,що підходить для індивідуальних відвідувачів,
             сімейних вечерь та масштабних подій.
           </li>
-          <li class="item">
+          <li class="main-hall-item">
             Фонова музика в будні дні, та жива музика по вихідних -для особливої
             атмосфери.
           </li>
-          <li class="item">
+          <li class="main-hall-item">
             Сучасний кондиціонер підтримує оптимальну температуру в будь-яку
             пору року.
           </li>
-          <li class="item">
+          <li class="main-hall-item">
             Романтичне та мяке освітлення для створення затишної атмосфери.
           </li>
-          <li class="item">Обладнана комфортна зона на вулиці для куріння.</li>
-          <li class="item">Зал пристосований для людей з інвалідністю.</li>
-          <li class="item">
+          <li class="main-hall-item">Обладнана комфортна зона на вулиці для куріння.</li>
+          <li class="main-hall-item">Зал пристосований для людей з інвалідністю.</li>
+          <li class="main-hall-item">
             Безкоштовний WI-FI та зарядні станції для гаджетів.
           </li>
         </ul>
@@ -208,21 +222,10 @@
           ресторані.
         </p>
         <button class="btn" type="button">Клікни мене !</button>
+      </div>
+     
       </section>
-      <!--Тренувальна секція-->
-      <section class="hero">
-        <div class="slider">
-          <ul class="hero">
-            <li class="hero"><img src="" alt="" class="hero-img" /></li>
-            <li class="hero"><img src="" alt="" class="hero-img" /></li>
-            <li class="hero"><img src="" alt="" class="hero-img" /></li>
-            <li class="hero"><img src="" alt="" class="hero-img" /></li>
-          </ul>
-        </div>
-        <button id="prev">-</button>
-        <button id="next">-</button>
-      </section>
-    </main>
+
     <!--Футер-->
     <footer class="footer">
       <p class="copyright">&#169; copyright 2025</p>
@@ -259,6 +262,6 @@
         </li>
       </ul>
     </footer>
-    <script src="./js/modal.js"></script>
+    
   </body>
 </html>

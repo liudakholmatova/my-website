@@ -36,6 +36,9 @@ text-decoration: none;
     letter-spacing: 0.1em;
     color: #555555;
 }
+.list {
+    list-style: none;
+}
 .btn {
     font-family: inherit;
     font-weight: 600;
@@ -130,12 +133,45 @@ color: #303030;
         
 }
 
+/* Секція галерея*/
+
+.gallery {
+    background-color: var(--main-bg-cl);
+}
+.section-title {
+    font-weight: 700;
+        font-size: 18px;
+        line-height: 1.67;
+        letter-spacing: 0.02em;
+        color: #555555;
+        text-align: center;
+}
 
 
+/*Секція про мене*/
 
+.about .subtitle,
+.about .description  {
+    font-family: Roboto;
+        font-weight: 400;
+        font-size: 18px;
+            line-height: 1.67;
+        letter-spacing: 0.1em;
+        color: #555555;
+}
 
-
-
+/* Сукція головний зал*/
+ .main-hall-uppertitl {
+    font-size: 18px;
+        font-weight: 400;
+        text-transform: uppercase;
+}
+.main-hall-title {
+            font-size: 36px;
+            font-weight: bold;
+            color: #303030
+            text-align: center;
+}
 
 
 
