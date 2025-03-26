@@ -138,46 +138,79 @@ color: #303030;
 .gallery {
     background-color: var(--main-bg-cl);
 }
+
 .section-title {
+    font-family: Raleway;
     font-weight: 700;
-        font-size: 18px;
-        line-height: 1.67;
-        letter-spacing: 0.02em;
-        color: #555555;
-        text-align: center;
+    font-size: 42px;
+    line-height: 1.2;
+    text-align: center;
+        color: #303030;
 }
 
 
 /*Секція про мене*/
 
-.about .subtitle,
+.about .subtitle {
+font-family: Open Sans;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #303030
+}
 .about .description  {
-    font-family: Roboto;
-        font-weight: 400;
+    font-weight: 400;
         font-size: 18px;
-            line-height: 1.67;
-        letter-spacing: 0.1em;
-        color: #555555;
+        line-height: 1.67;
+        letter-spacing: 0.02em;
+        color: #555555
 }
 
-/* Сукція головний зал*/
- .main-hall-uppertitl {
-    font-size: 18px;
-        font-weight: 400;
-        text-transform: uppercase;
+/* Секція головний зал*/
+
+
+ .main-hall .uppertitl {
+    
+        font-family: Open Sans;
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 1.36;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: #555555
 }
-.main-hall-title {
-            font-size: 36px;
-            font-weight: bold;
-            color: #303030
-            text-align: center;
+
+
+     .main-hall-item {
+        font-family: Roboto;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 1.33;
+            letter-spacing: 0.1em;
+            color: #555555;
+     }
+.main-hall-text {
+font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
+/* Футер */
 
+.footer .link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: #303030;
+}
 
-
-
-
+.footer .link:hover,
+.footer .link:focus {
+    color: var(--accent-cl);
+}
 
 
            
