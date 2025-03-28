@@ -120,7 +120,7 @@ color: #303030;
         font-weight: 700;
         font-size: 72px;
         line-height: 1.18;
-        letter-spacing: 0.5;
+        /* letter-spacing: 0.5; */
         color: #fff;
 }
 .hero .subtitle {
@@ -144,6 +144,7 @@ color: #303030;
     font-weight: 700;
     font-size: 42px;
     line-height: 1.2;
+    letter-spacing: 0.01em;
     text-align: center;
         color: #303030;
 }
@@ -184,12 +185,12 @@ font-family: Open Sans;
 
 
      .main-hall-item {
-        font-family: Roboto;
+         font-family: Roboto;
             font-weight: 300;
             font-size: 12px;
             line-height: 1.33;
             letter-spacing: 0.1em;
-            color: #555555;
+            color: #555555; 
      }
 .main-hall-text {
 font-size: 18px;
@@ -197,7 +198,7 @@ font-size: 18px;
     text-transform: uppercase;
 }
 
-/* Футер */
+/* Футер*/
 
 .footer .link {
     font-weight: 600;
