@@ -11,10 +11,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <!--<link
@@ -27,39 +24,44 @@
   <body>
     <!--Шапка сайту-->
     <header class="header">
-      <a href="./index.html" aria-label="Логотип сайта Hata-bagata">
-        <img
-          src="https://stand-gallery.com/image/cache/catalog/466931014_dekora
-          tsiya-dlya-oformlennya-500*500-product_thumb.jpg"
-          alt="Українська хатина"
-          width="69"
-          height="56"
-        />
-      </a>
-      <nav class="navigation">
-        <ul class="list">
-          <li class="item">
-            <a class="link navigation-link" href="#">Основне меню</a>
-          </li>
-          <li class="item">
-            <a class="link navigation-link" href="#">Банкет</a>
-          </li>
-          <li class="item">
-            <a class="link navigation-link" href="#">Реберня</a>
-          </li>
-          <li class="item">
-            <a class="link navigation-link" href="#">Меню від ведмедика</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="header-gruop">
-        <a class="link header-phone" href="tel:380970191918"
-          >+38 097 019 19 18</a
+      <div class="container header-container">
+        <a
+          class="logo"
+          href="./index.html"
+          aria-label="Логотип сайта Hata-bagata"
         >
-        <a class="link header-phone" href="tel:380660191918"
-          >+38 066 019 19 18</a
-        >
-        <button class="btn btn-mode-light" type="button">Онлайн запис</button>
+          <img
+            src="https://img.freepik.com/premium-vector/rural-landscape-color-image-sketch-style-there-is-space-text-vector-illustration_615712-164.jpg?uid=R190231674&ga=GA1.1.1110229480.1741509105"
+            alt="Українська хатина"
+            width="69"
+            height="56"
+          />
+        </a>
+        <nav class="navigation">
+          <ul class="navigation-list list">
+            <li class="item">
+              <a class="link navigation-link" href="#">Основне меню</a>
+            </li>
+            <li class="item">
+              <a class="link navigation-link" href="#">Банкет</a>
+            </li>
+            <li class="item">
+              <a class="link navigation-link" href="#">Реберня</a>
+            </li>
+            <li class="item">
+              <a class="link navigation-link" href="#">Меню від ведмедика</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-gruop">
+          <a class="link header-phone" href="tel:380970191918"
+            >+38 097 019 19 18</a
+          >
+          <a class="link header-phone" href="tel:380660191918"
+            >+38 066 019 19 18</a
+          >
+          <button class="btn btn-mode-light" type="button">Онлайн запис</button>
+        </div>
       </div>
     </header>
     <main>
@@ -226,7 +228,7 @@
     </main>
     <!--Футер-->
     <footer class="footer">
-      <div class="footer">
+      <div class="container">
         <div>
           <a class="footer-logo" href="#"></a>
           <address class="address">
