@@ -11,11 +11,12 @@
     /*bacground colors*/
     --accent-cl: #FF6C00;
     --main-bg-cl: #F5F4FA;
-    --secondary-bg-cl: ;
+    --secondary-bg-cl: #191c26;
 
 }
 body {
     font-family: var(--main-font);
+    font-weight: 600;
     font-size: 14px;
     line-height: 1.86;
     letter-spacing: 0.02em;
@@ -45,7 +46,7 @@ text-decoration: none;
     padding-bottom: 130px;
 }
 .container {
-    outline:  1px solid  red;
+     outline: 1px solid red; 
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -170,7 +171,7 @@ padding-bottom: 52px;
 /* Секція герой */
 
 .hero {
-    background-color: #191c26;
+    background-color: var(--secondary-bg-cl);
 }
 .hero .list {
      display: flex;
@@ -208,7 +209,7 @@ color: #303030;
         font-size: 72px;
         line-height: 1.18;
          letter-spacing: 0.5; 
-        color: #fff;
+        color: var(--main-bg-cl);
 }
 .hero .subtitle {
         font-weight: 400;
@@ -265,31 +266,44 @@ text-align: center;
 /*Секція про мене*/
 
 .about .subtitle {
+    margin-bottom: 20px;
 font-family: Open Sans;
     font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
+    /* font-size: 18px;
+    line-height: 1.67; */
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: #303030
 }
 .about .description  {
+    margin-bottom: 20px;
     font-weight: 400;
         font-size: 18px;
         line-height: 1.67;
         letter-spacing: 0.02em;
         color: #555555
 }
+.about .about-group {
+    /* width: 1005px; */
+    margin-right: auto;
+    margin-left: auto;
+}
 
 /* Секція головний зал*/
 
 
- .main-hall .uppertitl {
+.main-hall {
+    background-color: var(--main-bg-cl);
     
+}
+
+ .main-hall .uppertitl {
+    width: 570px;
+    margin-bottom: 20px;
         font-family: Open Sans;
             font-weight: 600;
-            font-size: 11px;
-            line-height: 1.36;
+            /* font-size: 18px;
+            line-height: 1.67; */
             letter-spacing: 0.2em;
             text-transform: uppercase;
             color: #555555
@@ -299,11 +313,15 @@ font-family: Open Sans;
      .main-hall-item {
          font-family: Roboto;
             font-weight: 300;
-            font-size: 12px;
-            line-height: 1.33;
+            /* font-size: 18px;
+            line-height: 1.67; */
             letter-spacing: 0.1em;
             color: #555555; 
+            margin-bottom: 10px;
      }
+         .main-hall-item:last-child {
+            margin-bottom: 20px;
+         }
 .main-hall-text {
 font-size: 18px;
     font-weight: 400;
@@ -312,18 +330,42 @@ font-size: 18px;
 
 /* Футер*/
 
-.footer .link {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.2em;
-    color: #303030;
+.footer-container {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    /* align-items: baseline; */
+    background-color: var(--secondary-bg-cl);
 }
+  .restaurant-name {
+    display: block;
+        padding-bottom: 20px; 
+        font-family: Raleway, sans-serif;
+         font-weight: 700;
+        font-size: 26px;
+        line-height: 1.17; 
+     color: var(--main-bg-cl);
+ } 
+.footer-list {
+    margin-bottom: 12px;
+}
+ .footer .link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+color: rgba(157, 164, 189, 0.6);
+} 
+
 
 .footer .link:hover,
 .footer .link:focus {
     color: var(--accent-cl);
 }
-
+.ellipse-container {
+    padding-left: 120px;
+    margin-bottom: 12px;
+}
 
            
