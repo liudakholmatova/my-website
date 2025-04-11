@@ -158,9 +158,17 @@ text-decoration: none;
 color: var(--accent-cl);
 }
 .header-gruop {
+    display: flex;
+        align-items: center;
     margin-left: auto;
 }
+ .heder-icons {
+    fill: currentColor;
+    margin-right: 5px;
+} 
 .header-phone {
+    display: flex;
+    align-items: center;
  padding-top: 52px;
 padding-bottom: 52px; 
     margin-right: 30px;
@@ -169,6 +177,7 @@ padding-bottom: 52px;
 .header-phone:focus {
     color: var(--accent-cl);
 }
+
 
 /* Секція герой */
 
@@ -357,9 +366,6 @@ font-size: 18px;
 }
 
 /* Футер*/
-.footer {
-
-}
 .footer-container {
     padding-top: 60px;
     padding-bottom: 40px;
@@ -376,8 +382,33 @@ font-size: 18px;
         line-height: 1.17; 
      color: var(--main-bg-cl);
  } 
+ .address {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+
+ }
 .footer-list {
     margin-bottom: 12px;
+}
+.footer-maps {
+fill: currentColor;
+    margin-right: 5px;
+}
+.footer-gruop {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+     margin-top: 30px; 
+}
+.footer-phone {
+    display: flex;
+    align-items: center;
+}
+.footer-icons {
+    fill: currentColor;
+        margin-right: 5px;
 }
  .footer .link {
     font-weight: 600;
@@ -393,9 +424,9 @@ color: rgba(157, 164, 189, 0.6);
     color: var(--accent-cl);
 }
 .ellipse-container {
-    padding-left: 120px;
+  padding-left: 200px;
 }
 .ellipse-container .item {
-    margin-bottom: 16px;
+    /* margin-bottom: 10px; */
 }
            
