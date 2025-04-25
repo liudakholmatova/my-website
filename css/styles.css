@@ -429,4 +429,30 @@ color: rgba(157, 164, 189, 0.6);
 .ellipse-container .item {
     /* margin-bottom: 10px; */
 }
-           
+  
+
+.baking-img {
+    width: 370px;
+    min-width: auto;
+    height: 260px;
+}
+.baking-item {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+    gap: 60px;
+}
+.baking-title {
+    font-family: Roboto;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #303030
+}
+.baking-text {
+font-family: Roboto;
+font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #303030
+}
