@@ -4,7 +4,7 @@
     --secondary-font: Raleway, sans-serif;
 
     /*text color*/
-     --accent-cl: ; 
+     --accent-cl: #555555; 
     --main-txt-cl: #1E1E1E;
     --secondary-txt-cl: ;
 
@@ -15,12 +15,12 @@
 
 }
 body {
-    /* font-family: var(--main-font);
+     font-family: var(--main-font);
     /* font-weight: 600; */
-    /* font-size: 14px;
+     font-size: 14px;
     line-height: 1.86;
     letter-spacing: 0.02em;
-    color: var(--main-txt-cl); */ 
+    color: var(--main-txt-cl);  
 }
 p,
 h1,
@@ -462,4 +462,17 @@ font-size: 18px;
     font-weight: 400;
     text-transform: uppercase;
     color: #303030
+}
+.menu {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 700;
+    display: block;
+    transition: color .225s;
+    /* cursor: pointer; */
+    overflow-wrap: break-word;
+}
+.menu-link {
+text-decoration: none;
+    color: currentColor;
 }
