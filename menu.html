@@ -26,7 +26,7 @@
           aria-label="Логотип сайта Hata-bagata"
         >
           <img
-            src="https://img.freepik.com/premium-vector/rural-landscape-color-image-sketch-style-there-is-space-text-vector-illustration_615712-164.jpg?uid=R190231674&ga=GA1.1.1110229480.1741509105"
+            src="./images/logo/logo_converted.jpg"
             alt="Українська хатина"
             width="69"
             height="56"
@@ -86,9 +86,25 @@
       </section>
     </main>
     <script>
+
+
       const dishes = {
         Сніданки: [
-          "Сирник з чорничним мусом",
+          { name: "Омлет", price: "80 грн", image: "omelet.jpg" },
+          { name: "Сирники", price: "90 грн", image: "syrnyky.jpg" },
+          { name: "Тости з авокадо", price: "100 грн", image: "toast.jpg" },
+        ],
+        Десерти: [
+          { name: "Тірамісу", price: "120 грн", image: "tiramisu.jpg" },
+          { name: "Морозиво", price: "70 грн", image: "icecream.jpg" },
+        ],
+      };
+
+
+      const dishes = {
+        Сніданки: [
+          {name: "Сирник з чорничним мусом", price: "115", image: }
+
           "Яєшня з ковбасами",
           "Вівсянка з ягодами та фруктами",
           "Бріош з авокадо та фруктами",
@@ -106,8 +122,6 @@
           "Снігерс",
           "Тістечко Груша",
         ],
-        // Вечері: ["Паста з куркою", "Риба на пару", "Овочеве рагу"],
-        // Десерти: ["Чізкейк", "Тірамісу", "Морозиво"],
       };
 
       function showDishes(category) {
