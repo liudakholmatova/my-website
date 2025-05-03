@@ -35,32 +35,93 @@
       </div>
     </header>
     <main>
-      <section class="menu">
-        <div class="container">
-          <ul class="list">
-            <li><a class="menu-link" href="">Сніданки з 9.00-12.00</a></li>
-            <li>
-              <a class="menu-link" href="">Власна кондитерська випічка</a>
-            </li>
-            <li><a class="menu-link" href="./piza.html">Піцца</a></li>
-            <li><a class="menu-link" href="">Лангуш з печі</a></li>
-            <li><a class="menu-link" href="">Страви на компанію</a></li>
-            <li><a class="menu-link" href="">Холодні закуски</a></li>
-            <li><a class="menu-link" href="">Перші страви</a></li>
-            <li><a class="menu-link" href="">Салати</a></li>
-            <li><a class="menu-link" href="">Гарячі страви</a></li>
-            <li><a class="menu-link" href="">Страви на вогні</a></li>
-            <li><a class="menu-link" href="">Гарніри</a></li>
-            <li>
-              <a class="menu-link" href="">Українські традиційні страви</a>
-            </li>
-            <li><a class="menu-link" href="">Соуси</a></li>
-            <li><a class="menu-link" href="./baking.html">Десерти</a></li>
-            <li><a class="menu-link" href="">Бокси</a></li>
-            <li><a class="menu-link" href="">Новинки</a></li>
-          </ul>
+      <section class="section-menu">
+        <div class="menu">
+          <div class="menu-left">
+            <ul class="list menu-list">
+              <li class="menu-item" onclick="showDishes('Сніданки')">
+                Сніданки
+              </li>
+              <li
+                class="menu-item"
+                onclick="showDishes('Власна кондитерська випічка')"
+              >
+                Власна кондитерська випічка
+              </li>
+
+              <li class="menu-item" onclick="showDishes('Піцца')">Піцца</li>
+              <li class="menu-item" onclick="showDishes('Лангуш з печі')">
+                Лангуш з печі
+              </li>
+
+              <li class="menu-item" onclick="showDishes('Страви на компанію')">
+                Страви на компанію
+              </li>
+              <li class="menu-item" onclick="showDishes('Перші страви')">
+                Перші страви
+              </li>
+              <li class="menu-item" onclick="showDishes('Салати')">Салати</li>
+              <li class="menu-item" onclick="showDishes('Гарячі страви')">
+                Гарячі страви
+              </li>
+              <li class="menu-item" onclick="showDishes('Страви на вогні')">
+                Страви на вогні
+              </li>
+              <li class="menu-item" onclick="showDishes('Гарніри')">Гарніри</li>
+              <li
+                class="menu-item"
+                onclick="showDishes('Українські традиційні страви')"
+              >
+                Українські традиційні страви
+              </li>
+              <li class="menu-item" onclick="showDishes('Соуси')">Соуси</li>
+              <li class="menu-item" onclick="showDishes('Десерти')">Десерти</li>
+              <li class="menu-item" onclick="showDishes('Бокси')">Бокси</li>
+              <li class="menu-item" onclick="showDishes('Новинки')">Новинки</li>
+            </ul>
+          </div>
+
+          <div class="content" id="content"></div>
         </div>
       </section>
     </main>
+    <script>
+      const dishes = {
+        Сніданки: [
+          "Сирник з чорничним мусом",
+          "Яєшня з ковбасами",
+          "Вівсянка з ягодами та фруктами",
+          "Бріош з авокадо та фруктами",
+          "Омлет з сиром та мінісосисками",
+          "Скрамбл з кус кусом",
+        ],
+        "Власна кондитерська випічка": [
+          "Чізкейк ягідний",
+          "Тістечко Шоколад-апельсин",
+          "Тістечко Шоколад-малина",
+          "Наполеон",
+          "Тістечко Чорний ліс",
+          "Тістечко Тірамісу кавове",
+          "Тістечко Полуниця-ваніль",
+          "Снігерс",
+          "Тістечко Груша",
+        ],
+        // Вечері: ["Паста з куркою", "Риба на пару", "Овочеве рагу"],
+        // Десерти: ["Чізкейк", "Тірамісу", "Морозиво"],
+      };
+
+      function showDishes(category) {
+        const contentDiv = document.getElementById("content");
+        const items = dishes[category]
+
+          .map((dish) => `<li class="menu-item-right">${dish}</li>`)
+          .join("");
+
+        contentDiv.innerHTML = `
+        <h2>${category}</h2>
+        <ul>${items}</ul>
+      `;
+      }
+    </script>
   </body>
 </html>
