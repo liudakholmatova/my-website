@@ -39,8 +39,11 @@
         <div class="menu">
           <div class="menu-left">
             <ul class="list menu-list">
-              <li class="menu-item" onclick="showDishes('Сніданки')">
-                Сніданки
+              <li
+                class="menu-item"
+                onclick="showDishes('Сніданки з 9.00-12.00')"
+              >
+                Сніданки з 9.00-12.00
               </li>
               <li
                 class="menu-item"
@@ -86,30 +89,50 @@
       </section>
     </main>
     <script>
-
-
       const dishes = {
-        Сніданки: [
-          { name: "Омлет", price: "80 грн", image: "omelet.jpg" },
-          { name: "Сирники", price: "90 грн", image: "syrnyky.jpg" },
-          { name: "Тости з авокадо", price: "100 грн", image: "toast.jpg" },
-        ],
-        Десерти: [
-          { name: "Тірамісу", price: "120 грн", image: "tiramisu.jpg" },
-          { name: "Морозиво", price: "70 грн", image: "icecream.jpg" },
-        ],
-      };
-
-
-      const dishes = {
-        Сніданки: [
-          {name: "Сирник з чорничним мусом", price: "115", image:  }
-
-          "Яєшня з ковбасами",
-          "Вівсянка з ягодами та фруктами",
-          "Бріош з авокадо та фруктами",
-          "Омлет з сиром та мінісосисками",
-          "Скрамбл з кус кусом",
+        "Сніданки з 9.00-12.00": [
+          {
+            name: "Сирник з чорничним мусом",
+            price: "115 &#8372;",
+            image: "./images/випічка/груша.jpg",
+            description:
+              "Ніжний сирник із хрусткою основою та чорничним мусом зверху.",
+          },
+          {
+            name: "Яєшня з ковбасами",
+            price: "165 &#8372;",
+            image: "./images/випічка/груша.jpg",
+            description:
+              "Ранкова енергія: яєшня з ковбасами - ідеальний початок дня.",
+          },
+          {
+            name: "Вівсянка з ягодами та фруктами",
+            price: "100 &#8372;",
+            image: "./images/випічка/груша.jpg",
+            description:
+              "Ніжна вівсяна каша з асорті свіжих сезонних ягід та фруктів.",
+          },
+          {
+            name: "Бріош з авокадо та фруктами",
+            price: "235 &#8372;",
+            image: "./images/випічка/груша.jpg",
+            description:
+              "Мягкий бріош, стигле авокадо,свіжі сезонні фрукти.Енергія та смак у кожному шматочку.",
+          },
+          {
+            name: "Омлет з сиром та мінісосисками",
+            price: "170 &#8372;",
+            image: "./images/випічка/груша.jpg",
+            description:
+              "Пишний омлет,приготований з вершковим сиром та соковитими мінісосисками.",
+          },
+          {
+            name: "Скрамбл з кус кусом",
+            price: "115 &#8372;",
+            image: "./images/випічка/груша.jpg",
+            description:
+              "Ніжний скрамбл подається на подушці з легкого кус куса та зеленню.Незвичний та смачний початок дня.",
+          },
         ],
         "Власна кондитерська випічка": [
           "Чізкейк ягідний",
@@ -124,17 +147,27 @@
         ],
       };
 
+      // my code//
       function showDishes(category) {
         const contentDiv = document.getElementById("content");
         const items = dishes[category]
 
-          .map((dish) => `<li class="menu-item-right">${dish}</li>`)
+          .map(
+            (dish) => `<li class="menu-item-right">
+                  <img class="img-item-right" src="${dish.image}" alt="${dish.name}">
+              <div class="dish-info">
+                <h3 class="dish-title">${dish.name}</h3>
+                <p class="dish-price">${dish.price}</p>
+                 <p class="dish-description">${dish.description}</p>
+              </div>
+                  </li>`
+          )
           .join("");
 
         contentDiv.innerHTML = `
-        <h2>${category}</h2>
-        <ul>${items}</ul>
-      `;
+              <h2>${category}</h2>
+              <ul>${items}</ul>
+            `;
       }
     </script>
   </body>

@@ -33,7 +33,7 @@ h6 {
 }
 img {
     display: block;
-    min-width: 100%;
+    /* min-width: 100%; */
     /* height: auto; */
 }
 .link {
@@ -492,14 +492,21 @@ font-size: 18px;
     margin-bottom: 0;
 }
   .content {
+    position: relative;
       width: 70%;
       padding: 20px;
   }
 
   .content h2 {
+    position: sticky;
+    top: 0;
+    z-index: 2;
       margin-top: 0;
+      background: white;
+      padding-left: 80px;
+      padding-bottom: 40px;
   }
-    .menu-item-right {
+    /* .menu-item-right {
         margin-bottom: 10px;
             padding-left: 40px;
             
@@ -507,5 +514,45 @@ font-size: 18px;
                         font-size: 18px;
                         font-weight: 400;
                         text-transform: uppercase;
-                        color: #303030
-    }
+                        color: #303030 
+    }*/
+        .dish-list {
+            list-style: none;
+            padding: 0;
+        }
+    
+                 .menu-item-right { 
+                
+                z-index: 1;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+                                                                 
+                    .img-item-right {
+                            border-radius: 8px;
+                            object-fit: cover;
+                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                            max-width: 80px;
+                            height: 80px;
+                        }
+        
+                .dish-title {
+                    margin: 0;
+                    font-size: 1.1em;
+                }
+        
+                .dish-price {
+                    margin: 4px 0 0;
+                    color: #555;
+                }
+                                .dish-description {
+                                    font-size: 14px;
+                                    color: #555;
+                                    margin-top: 4px;
+                                }
