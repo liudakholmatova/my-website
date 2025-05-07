@@ -458,31 +458,54 @@ font-size: 18px;
     text-transform: uppercase;
     color: #303030
 } 
+/* Файл МЕНЮ */
+
+body.with-menu {
+    overflow: hidden;
+}
+.header-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+        z-index: 1000;
+          display: flex;
+        align-items: center;  
+        padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 .menu {
     display: flex;
-}   
-.menu-left {
-    margin: 0;
-    /* margin-top: 40px; */
-        max-width: 30%;
         height: 100vh;
+        padding-top: 60px;
+}  
+.menu-left {
+    position: fixed;
+        top: 90px;
+        left: 0;
+        overflow-y: auto;
+        z-index: 10;
+    margin: 0;
+        max-width: 30%;
+         height: 100vh; 
     font-size: 20px;
     line-height: 32px;
     font-weight: 700;
     display: block;
     transition: color .225s;
-     cursor: pointer; 
     overflow-wrap: break-word;
 }
-.menu-link {
-    text-decoration: none;
-        color: currentColor;
-}
 .menu-item {
-     margin-bottom: 10px; 
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+     margin-bottom: 5px; 
     padding-left: 20px;
     padding-right: 20px;
-    border-radius: 10px;
+    border-radius: 5px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2),
             0 -2px 4px rgba(0, 0, 0, 0.2),
             2px 0 4px rgba(0, 0, 0, 0.2),
@@ -493,6 +516,7 @@ font-size: 18px;
 }
   .content {
     position: relative;
+    margin-left: 30%;
       width: 70%;
       padding: 20px;
   }
@@ -506,26 +530,16 @@ font-size: 18px;
       padding-left: 80px;
       padding-bottom: 40px;
   }
-    /* .menu-item-right {
-        margin-bottom: 10px;
-            padding-left: 40px;
-            
-                    font-family: Roboto;
-                        font-size: 18px;
-                        font-weight: 400;
-                        text-transform: uppercase;
-                        color: #303030 
-    }*/
         .dish-list {
             list-style: none;
             padding: 0;
         }
     
                  .menu-item-right { 
-                
-                z-index: 1;
+                    /* overflow-y: auto; */
+                z-index: 1; 
             display: flex;
-            align-items: center;
+            align-items: center; 
             gap: 15px;
             margin-bottom: 15px;
             background-color: #fff;
