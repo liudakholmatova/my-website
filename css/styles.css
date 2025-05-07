@@ -461,32 +461,28 @@ font-size: 18px;
 /* Файл МЕНЮ */
 
 body.with-menu {
-    overflow: hidden;
+  
+
 }
-.header-menu {
+    .header-menu {
+        position: sticky;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 60px;
-    background-color: #ffffff;
-        z-index: 1000;
-          display: flex;
-        align-items: center;  
-        padding: 0 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000px;
+     width: 100%;
+        height: 60px;
 }
-
 .menu {
     display: flex;
         height: 100vh;
         padding-top: 60px;
 }  
 .menu-left {
-    position: fixed;
+     position: fixed;
         top: 90px;
-        left: 0;
-        overflow-y: auto;
+        left: 0; 
+       
         z-index: 10;
     margin: 0;
         max-width: 30%;
@@ -505,27 +501,28 @@ body.with-menu {
      margin-bottom: 5px; 
     padding-left: 20px;
     padding-right: 20px;
-    border-radius: 5px;
+    /* border-radius: 5px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2),
             0 -2px 4px rgba(0, 0, 0, 0.2),
             2px 0 4px rgba(0, 0, 0, 0.2),
-            -2px 0 4px rgba(0, 0, 0, 0.2);
+            -2px 0 4px rgba(0, 0, 0, 0.2); */
 }
 .menu-item:last-child {
     margin-bottom: 0;
 }
   .content {
-    position: relative;
+    margin-top: 0;
     margin-left: 30%;
       width: 70%;
-      padding: 20px;
+      padding: 10px;
+      height: 100%;
   }
 
   .content h2 {
     position: sticky;
-    top: 0;
-    z-index: 2;
-      margin-top: 0;
+    top: 60px;
+    z-index: 100; 
+      margin-top: 60px;
       background: white;
       padding-left: 80px;
       padding-bottom: 40px;
@@ -536,8 +533,10 @@ body.with-menu {
         }
     
                  .menu-item-right { 
-                    /* overflow-y: auto; */
-                z-index: 1; 
+                    position: static;
+                    height: 100%;
+                     overflow-y: auto; 
+                 z-index: -100px;  
             display: flex;
             align-items: center; 
             gap: 15px;
