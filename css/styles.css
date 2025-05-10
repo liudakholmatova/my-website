@@ -460,38 +460,41 @@ font-size: 18px;
 } 
 /* Файл МЕНЮ */
 
-body.with-menu {
-  
 
-}
     .header-menu {
         position: sticky;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000px;
+    z-index: 1000;
      width: 100%;
         height: 60px;
 }
+/* .section-menu {
+
+} */
 .menu {
     display: flex;
-        height: 100vh;
+       height: auto;
         padding-top: 60px;
+        position: relative;
 }  
 .menu-left {
-     position: fixed;
-        top: 90px;
+      position: fixed;
+        top: 90;
         left: 0; 
        
         z-index: 10;
-    margin: 0;
-        max-width: 30%;
+    margin: 0; 
+        max-width: 25%;
          height: 100vh; 
     font-size: 20px;
     line-height: 32px;
-    font-weight: 700;
+    font-weight: 700; 
     display: block;
-    transition: color .225s;
+    color: #303030;
+    transform: skewX(-3deg);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
     overflow-wrap: break-word;
 }
 .menu-item {
@@ -501,31 +504,41 @@ body.with-menu {
      margin-bottom: 5px; 
     padding-left: 20px;
     padding-right: 20px;
+    transition: color .225s;
+    /* transition: color 0.3s ease; */
     /* border-radius: 5px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2),
             0 -2px 4px rgba(0, 0, 0, 0.2),
             2px 0 4px rgba(0, 0, 0, 0.2),
             -2px 0 4px rgba(0, 0, 0, 0.2); */
 }
+.menu-item:hover {
+color: #555555;
+}
 .menu-item:last-child {
     margin-bottom: 0;
 }
   .content {
-    margin-top: 0;
-    margin-left: 30%;
-      width: 70%;
-      padding: 10px;
-      height: 100%;
+    margin-top: 60;
+     margin-left: 30%; 
+      width: 50%;
+      padding: 20px;
+      height: auto;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+        /* напівпрозорий бордер */
+        border-radius: 8px;
+        box-sizing: border-box;
   }
 
   .content h2 {
-    position: sticky;
-    top: 60px;
-    z-index: 100; 
-      margin-top: 60px;
+     position: sticky; 
+    top: -1;
+    z-index: 100;  
       background: white;
       padding-left: 80px;
       padding-bottom: 40px;
+      color: #555555;
+   
   }
         .dish-list {
             list-style: none;
@@ -533,10 +546,10 @@ body.with-menu {
         }
     
                  .menu-item-right { 
-                    position: static;
+                    /* position: static; */
                     height: 100%;
                      overflow-y: auto; 
-                 z-index: -100px;  
+                  /* z-index: -100;    */
             display: flex;
             align-items: center; 
             gap: 15px;
