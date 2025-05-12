@@ -475,6 +475,7 @@ font-size: 18px;
 } */
 .menu {
     display: flex;
+    flex-direction: row;
        height: auto;
         padding-top: 60px;
         position: relative;
@@ -505,12 +506,6 @@ font-size: 18px;
     padding-left: 20px;
     padding-right: 20px;
     transition: color .225s;
-    /* transition: color 0.3s ease; */
-    /* border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2),
-            0 -2px 4px rgba(0, 0, 0, 0.2),
-            2px 0 4px rgba(0, 0, 0, 0.2),
-            -2px 0 4px rgba(0, 0, 0, 0.2); */
 }
 .menu-item:hover {
 color: #555555;
@@ -582,3 +577,6 @@ color: #555555;
                                     color: #555;
                                     margin-top: 4px;
                                 }
+     .content-3 {
+        max-width: 25%;
+     }
