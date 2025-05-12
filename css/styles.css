@@ -470,9 +470,6 @@ font-size: 18px;
      width: 100%;
         height: 60px;
 }
-/* .section-menu {
-
-} */
 .menu {
     display: flex;
     flex-direction: row;
@@ -488,7 +485,7 @@ font-size: 18px;
         z-index: 10;
     margin: 0; 
         max-width: 25%;
-         height: 100vh; 
+         /* height: 100vh;  */
     font-size: 20px;
     line-height: 32px;
     font-weight: 700; 
@@ -504,7 +501,7 @@ font-size: 18px;
     margin-right: 5px;
      margin-bottom: 5px; 
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 10px;
     transition: color .225s;
 }
 .menu-item:hover {
@@ -579,4 +576,10 @@ color: #555555;
                                 }
      .content-3 {
         max-width: 25%;
+       margin-left: 20px;
+            display: block;
+            color: #303030;
+            transform: skewX(-3deg);
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+            overflow-wrap: break-word;
      }
